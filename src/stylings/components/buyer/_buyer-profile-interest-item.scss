@@ -1,0 +1,81 @@
+.buyer-profile-interest-item{
+    margin: 10px 0;
+    .buyer-profile-interest-item-block{
+        input[type="checkbox"] {
+            display: none;
+        }
+
+        input[type="checkbox"]:checked + .btn-group > label span {
+            font-size: 26px;
+            font-size: 2.6rem;
+            width: 16px;
+        }
+
+        input[type="checkbox"] + .btn-group > label span {
+            font-size: 26px;
+            font-size: 2.6rem;
+            width: 16px;
+        }
+
+        input[type="checkbox"]:checked + .btn-group > label:first-child{
+            color: $color-white;
+            background-color: $color-link;
+            border: 0;
+            border-top-left-radius: 4px !important;
+            border-bottom-left-radius: 4px !important;
+            
+            &:hover{
+                background-color: $color-lightgreen !important;
+            }
+            
+        }
+        
+        input[type="checkbox"] + .btn-group > label:first-child{
+            color: $color-nav-blue;
+            background-color: $color-white;
+            border: 0;
+            border-top-left-radius: 4px !important;
+            border-bottom-left-radius: 4px !important;
+            
+            &:hover{
+                background-color: darken($color-white, 10%) !important;
+            }
+        }
+        
+        input[type="checkbox"] + .btn-group > label:last-child{
+            margin: 0;
+            padding: 10.5px 33px 10.5px 10px;
+            font-size: 14px;
+            font-size: 1.4rem;
+            -webkit-font-smoothing: antialiased;
+            color: $color-white;
+            background-color: $color-register-widget-bg;
+            border: 0;
+            box-shadow: none;
+            border-top-right-radius: 4px !important;
+            border-bottom-right-radius: 4px !important;
+        }
+
+        input[type="checkbox"] + .btn-group > label span:first-child {
+            font-size: 26px;
+            font-size: 2.6rem;
+            display: none;
+        }
+
+        input[type="checkbox"] + .btn-group > label span:last-child {
+            display: inline-block;   
+        }
+
+        input[type="checkbox"]:checked + .btn-group > label span:first-child {
+            font-size: 26px;
+            font-size: 2.6rem;
+            display: inline-block;
+            &:before{
+                margin-left: -3px;
+            }
+        }
+        input[type="checkbox"]:checked + .btn-group > label span:last-child {
+            display: none;   
+        }
+    }
+}

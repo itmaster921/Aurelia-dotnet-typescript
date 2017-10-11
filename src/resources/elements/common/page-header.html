@@ -1,0 +1,121 @@
+<template bindable="name">
+  <!--<h1>Title</h1>
+  <nav>
+    <ul>
+      <li repeat.for="row of router.navigation">
+        <a href.bind="row.href">${row.title}</a>
+      </li>
+    </ul>
+  </nav>-->
+  <nav class="navbar navbar-inverse">
+    <div class="container">
+      <!--mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" click.delegate="welcome1()">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/"></a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Buyers<span class="sr-only">(current)</span></a></li>
+          <li><a href="#">Sellers</a></li>
+          <li><a href="#">Experts & Advice</a></li>
+        </ul>
+        
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown contact-menu">
+            
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+              <img class="profile-image" src="/images/dummy_profile_image.png">
+              <span class="profile-notification">3</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-arrow">
+                <div class="arrow-wrapper">
+                  <div class="arrow">
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="contact-user-image">
+                    <img src="/images/profile_picture_dummy.png">
+                    <span class="profile-notification">3</span>
+                  </div>
+                  <div class="contact-user-block">
+                    <p class="contact-user-name">Anne-Marie Gregory</p>
+                    <span class="contact-user-offline"></span>
+                    <span class="contact-user-status">Offline</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="contact-user-image">
+                    <img src="/images/profile_picture_dummy.png">
+                  </div>
+                  <div class="contact-user-block">
+                    <p class="contact-user-name">Daniel Macarounis</p>
+                    <span class="contact-user-online"></span>
+                    <span class="contact-user-status">Online</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="contact-user-image">
+                    <img src="/images/profile_picture_dummy.png">
+                  </div>
+                  <div class="contact-user-block">
+                    <p class="contact-user-name">Jolene Blacksmith</p>
+                    <span class="contact-user-offline"></span>
+                    <span class="contact-user-status">Offline</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="contact-user-image">
+                    <img src="/images/profile_picture_dummy.png">
+                  </div>
+                  <div class="contact-user-block">
+                    <p class="contact-user-name">Jared Miller</p>
+                    <span class="contact-user-offline"></span>
+                    <span class="contact-user-status">Offline</span>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            
+          </li>
+          <li class="dropdown profile-menu">
+            
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+              <img class="profile-image" src="/images/dummy_profile_image.png">
+              
+              <span class="profile-name">NAB Australia</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-arrow">
+                <div class="arrow-wrapper">
+                  <div class="arrow">
+                  </div>
+                </div>
+              </li>
+              <li><a href="#">View profile</a></li>
+              <li><a href="#">Dashboard</a></li>
+              <li><a href="#">Log out</a></li>
+            </ul>
+            
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+</template>

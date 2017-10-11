@@ -1,0 +1,25 @@
+<template>
+  <require from="./supplier-article-item"></require>
+  <div class="supplier-articles-block">
+    <h3>About</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget molestie elit. Cras nec enim in felis eleifend mollis sit amet in lorem. Etiam eget lorem nec quam faucibus finibus a a turpis. Sed consequat ex urna, in facilisis eros interdum sit amet.</p>
+    <br/>
+    <p>Etiam id ipsum est. Sed sed molestie est. Vestibulum imperdiet nulla ac ipsum fringilla, vitae faucibus lacus rutrum. In mattis fringilla viverra. Nullam fringilla massa et euismod vehicula. Nullam egestas maximus mauris id laoreet.</p>
+  </div>
+  <div class="supplier-articles-block" if.bind="showAboutOnly == false">
+    <h3>Articles and case studies</h3>
+    <div class="supplier-articles">
+      <div class="row">
+        <div class="col-md-6 col-sm-6 col-xs-6">
+          <supplier-article-item></supplier-article-item>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-6">
+          <supplier-article-item></supplier-article-item>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-6">
+          <supplier-article-item></supplier-article-item>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>

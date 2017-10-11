@@ -1,0 +1,88 @@
+<template>
+  <require from="./../../resources/elements/common/page-header"></require>
+  <require from="./../../resources/elements/common/page-footer"></require>
+  
+  <require from="./../../resources/elements/buyer/buyer-featured-promo"></require>
+  <require from="./../../resources/elements/buyer/buyer-dashboard-hint-item"></require>
+  <require from="./../../resources/elements/buyer/buyer-ad-item"></require>
+
+  <page-header></page-header>
+  <div class="main-content">
+    <div class="container">
+      <h1>Create new article</h1>
+      <div class="supplier-create-article-block">
+        <div class="row">
+          
+          <div class="col-md-9 col-sm-8 col-xs-12">
+            <div class="supplier-create-article-content">
+              <div class="medium-contents-section">
+                <div class="input-row">             
+                  <h4>Article Title</h4>
+                  <div class="contact-form-elements">
+                    <div class="value-mandatory">
+                      <input type="text" placeholder="Add a title for your case study/article ">
+                      <div>&lowast;</div>
+                    </div>
+                  </div>
+                </div>
+                <div  class="input-row">             
+                  <h4>Article synopsis</h4>
+                  <div class="contact-form-elements">
+                    <div class="value-mandatory">
+                      <input type="text" placeholder="Add a short sentence describing your article ">
+                      <div>&lowast;</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="full-contents-section">
+                <div  class="input-row">             
+                  <h4>Upload Image</h4>
+                  <p>Upload an image for your article by dragging it into the box below, or by manually uploading. We recommend you upload your photo as a landscape image, minimum size XXX x XXXpx at 72dpi in RGB.</p>
+                
+                  <!--<div class="contact-form-elements">-->
+                  <input id="input-image-supplier-article" name="input-image" type="file" class="file-loading" accept="image/*">
+                  <!-- an example modal dialog to display confirmation of the resized image -->
+                  <div id="kv-success-modal" class="modal fade">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                          <h4 class="modal-title">Yippee!</h4>
+                        </div>
+                        <div id="kv-success-box" class="modal-body">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--</div>-->
+                </div>
+                <div  class="input-row">             
+                  <h4>Article body</h4>
+                  <div class="contact-form-elements">
+                    <div class="value-mandatory">
+                      <textarea type="text" placeholder="Add the body content of your article (up to 2000 words) "></textarea>
+                      <div>&lowast;</div>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+              
+              <div class="supplier-article-action">
+                <button type="button" class="btn btn-primary supplier-article-create">Save and publish</button>
+              </div>  
+              
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-4 col-xs-12">
+            <buyer-featured-promo></buyer-featured-promo>
+            <buyer-dashboard-hint-item></buyer-dashboard-hint-item>
+            <buyer-ad-item></buyer-ad-item>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <page-footer></page-footer>
+
+</template>

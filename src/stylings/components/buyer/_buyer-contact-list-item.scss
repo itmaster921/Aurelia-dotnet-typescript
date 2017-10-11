@@ -1,0 +1,48 @@
+.buyer-contact-list-item {
+    
+    text-align: center;
+    
+    .profile-image-section{
+    
+        img {
+        
+            max-width: 3.6rem;
+            border-radius: 50%;
+            margin: 5px 0;
+        }
+    
+        span {
+            
+        }
+    
+    }
+
+    .contact-status-section {
+    
+        label {
+           
+            display: block;
+            margin-top: 11px;
+            font-weight: 400;
+            font-size: 1.4rem;
+            line-height: 1.9rem;
+        
+        }
+    
+        span {
+           
+            display: block;
+            font-size: 1.2rem;
+            line-height: 1.9rem;
+        
+        }
+        .online {
+            margin: 0 auto;
+            padding-bottom: 8.5px;
+            width: 85%;
+            border-bottom: 1px solid rgba(12,51,76,0.2);
+        }
+    
+    }
+
+}

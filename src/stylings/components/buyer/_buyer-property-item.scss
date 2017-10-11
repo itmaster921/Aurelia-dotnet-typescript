@@ -1,0 +1,85 @@
+.buyer-property-item {
+    .property-card {
+            background-color: $color-white;
+            margin-bottom: 30px;
+            .property-featured-image {
+                height: 147px;
+                overflow: hidden;
+            }
+
+            .property-info-section {
+                    background-color: $color-white;
+                    padding: 20px 8px;
+                    margin: -20px auto 0px;
+                    position: relative;
+                    width: 90%;
+                    .property-section {
+                        display: inline-block;
+                        vertical-align: top;
+                        width: 100%;
+
+                        .property-price{
+                            font-size: 20px;
+                            font-size: 2.0rem;
+                            font-weight: 500;
+                        }
+                        .property-header{
+                            font-size: 14px;
+                            font-size: 1.4rem;
+                            font-weight: 500;
+                        }
+                        .property-description {
+                            font-size: 12px;
+                            font-size: 1.2rem;
+                            font-weight: 300;
+                            
+                        }
+                    }
+
+                    .property-visual-info-section {
+                        position: absolute;
+                        top: 22px;
+                        right: 10px; 
+
+                        .info-numbers {
+                            margin-bottom: 10px;
+                            
+                            .info-number {
+                                display: inline-block;
+                                vertical-align: top;
+                                position: relative;
+                                padding: 0 6px;
+
+                                .image-wrapper {
+                                    height: 23px;
+                                    width: 23px;
+
+                                    img {
+                                        display: inline-block;
+                                        transform: translateY(-50%);
+                                        margin-top: 20%;
+                                    }
+                                }
+
+                                span {
+                                    text-align: center;
+                                    position: absolute;
+                                    right: -6px;
+                                    top: 0%;
+                                }
+                            }
+
+                        }
+
+                        .line-separator {
+                            margin-left: 15px;
+                        }
+
+                        .social-network {
+                            margin-left: 10px;
+                            padding-top: 6px;
+                        }
+                    }
+                }
+        }
+}

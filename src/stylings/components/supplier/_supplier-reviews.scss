@@ -1,0 +1,80 @@
+.supplier-reviews-block {
+    margin-bottom: 30px;
+    background-color: $color-sub-bg;
+    padding: 18px 20px 8px;
+
+    h3 {
+        font-size: 20px;
+        font-size: 2rem;
+        margin-bottom: 16px;
+        margin-top: 0;
+    }
+
+    .supplier-review-form {
+        margin-bottom: 27px;
+
+        textarea {
+            min-height: 90px;
+            padding: 12px 14px;
+        }
+
+        .supplier-review-footer {
+            border-bottom: 1px solid rgba(11, 50, 75, 0.2);
+            padding: 10px 10px 10px 14px;
+            background-color: $color-lightgray;
+            display: table;
+            width: 100%;
+            margin-top: -6px;
+
+            .star-rating-give-wrapper {
+                width: 112px;
+                display: table-cell;
+                vertical-align: middle;
+            }
+
+            .supplier-review-rating {
+                display: table-cell;
+                width: 120px;
+                vertical-align: middle;
+            }
+
+            .button-wrapper {
+                display: table-cell;
+                text-align: right;
+                vertical-align: middle;
+
+                .btn {
+                    float: right;
+                    display: block;
+                    font-size: 16px;
+                    font-size: 1.6rem;
+                    padding: 8px 12px;
+                }
+            }
+        }
+    }
+
+    @media (max-width: $screen-custom-middle-max) {
+        .supplier-review-form {
+            .supplier-review-footer {
+                display: block;
+                padding: 10px 0 0;
+
+                .star-rating-give-wrapper, .supplier-review-rating {
+                    display: inline-block;
+                    width:  49%;
+                }
+
+                .button-wrapper {
+                    display: block;
+                    width: 100%;
+
+                    .btn {
+                        float: none;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

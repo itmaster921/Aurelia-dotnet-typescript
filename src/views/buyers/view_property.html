@@ -1,0 +1,216 @@
+<template>
+  <require from="./../../resources/elements/common/page-header"></require>
+  <require from="./../../resources/elements/common/page-footer"></require>
+  <require from="./../../resources/elements/common/social-network-group"></require>
+  <require from="./../../resources/elements/buyer/buyer-featured-promo"></require>
+  <require from="./../../resources/elements/buyer/buyer-dashboard-hint-item"></require>
+  <require from="./../../resources/elements/buyer/buyer-ad-item"></require>
+
+  <page-header></page-header>
+  <div class="main-content view-property-block">
+    <div class="container">
+
+      <!-- Upper Title Caption -->
+      <div class="property-title-section clearfix">
+        <div class="left-aligned">
+          <h2>Property heading lorem ipsum dolor sit amet</h2>
+          <p>97 Windsor Street, Paddington, NSW 2021</p>
+        </div>
+        <div class="right-aligned">
+          <div class="social-network">
+            <social-network-group></social-network-group>
+          </div>
+        </div>
+      </div>
+      
+      <div id="slide-properties" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <!--<ol class="carousel-indicators">
+          <li data-target="#slide-properties" data-slide-to="0" class="active"></li>
+          <li data-target="#slide-properties" data-slide-to="1"></li>
+          <li data-target="#slide-properties" data-slide-to="2"></li>
+        </ol>-->
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="/images/property_image.jpg" alt="Property">
+          </div>
+
+          <div class="item">
+            <img src="/images/property_image.jpg" alt="Property">
+          </div>
+
+          <div class="item">
+            <img src="/images/property_image.jpg" alt="Property">
+          </div>
+        </div>
+
+        <!-- Photo Section -->
+        <div class="photo-section">
+          <p>13 photos</p>
+          <a href="#">View all</a>
+        </div>
+
+        <!-- Rating Button -->
+        <div class="rating-section">
+          <a href="/">
+            <img src="/images/icon_star_outline.png">
+          </a>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#slide-properties" data-slide="prev">
+          <img src="/images/icon_slide_left_arrow.png">
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#slide-properties" data-slide="next">
+          <img src="/images/icon_slide_right_arrow.png">
+          <span class="sr-only">Next</span>
+        </a>
+
+        
+      </div>
+      <div class="row">
+        <div class="col-md-3 col-sm-3 col-xs-12">
+          <div class="seller-details-section">
+            <span class="section-caption">
+              Seller details
+            </span>
+            <div class="seller-info-subsection">
+              <div class="seller-picture-wrapper">
+                <img class="profile-image" src="/images/seller_picture.png">
+                <img class="profile-checked" src="/images/icon_green_tick.png">
+              </div>
+              <h3>Jared Miller</h3>
+              <p class="verified-user">Verified User</p>
+              <p class="member-since">Member since April 2017</p>
+              <a class="report-user">
+                Report this user
+              </a>
+            </div>
+            <span class="line-separator"></span>
+            
+            <div class="seller-contact-form-subsection">
+              <p class="contact-caption">
+                Contact this seller
+              </p>
+              <textarea class="request-textfield" placeholder="Type your response..." value=""></textarea>
+              <a class="btn btn-primary">Request connection</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-12">
+          <div class="property-info-section">
+            <div class="property-investment-section">
+              <p class="property-type-info">
+                Property type: House
+                <br>
+                For sale by private treaty
+                <br><br>
+                Investment details:
+              </p>
+              <p class="property-invest-info">
+                Vendor selling 50% total equity
+                <br>
+                Property value: $1,250,000
+                <br>
+                Total investment: $625,000
+              </p>
+            </div>
+            <div class="property-visual-info-section">
+              <div class="info-numbers">
+                <div class="info-number">
+                  <div class="image-wrapper">
+                    <img src="/images/icon_bed_green.png">
+                  </div>
+                  <span>4</span>
+                </div>
+                <div class="info-number">
+                  <div class="image-wrapper">
+                    <img src="/images/icon_bathtube_green.png">
+                  </div>
+                  <span>3</span>
+                </div>
+                <div class="info-number">
+                  <div class="image-wrapper">
+                    <img src="/images/icon_car_green.png">
+                  </div>
+                  <span>2</span>
+                </div>
+              </div>
+              
+            </div>
+            <div class="property-description-section">
+              <p class="desc-title">
+                Inspections:
+              </p>
+              <p class="desc-content">
+                Saturday 22nd June 10am - 10.30am
+                <a href="#" class="link-calendar">
+                  <img src="/images/icon_calendar.png"></img>
+                  Add to calendar
+                </a>
+              </p>
+              <p class="desc-content">
+                Thursday 29th June 4.30pm - 5pm
+                <a href="#" class="link-calendar">
+                  <img src="/images/icon_calendar.png"></img>
+                  Add to calendar
+                </a>
+              </p>
+              <p class="desc-title">
+                <br>
+                About this property
+              </p>
+              <p class="desc-content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget molestie elit. Cras nec enim in felis eleifend mollis sit amet in lorem. Praesent nec neque in arcu ultrices elementum vel id elit. Nulla facilisi. Nulla in erat dolor.
+                <br>
+                <br>
+                Suspendisse nibh nunc, efficitur finibus egestas eu, pellentesque eget nisl. Fusce eget augue ex. Maecenas vitae dictum ipsum. 
+                <br>
+                <br>
+                Land size: 200m<sup>2</sup>
+                <br>
+                Internal size: 145m<sup>2</sup>
+                <br>
+                <a href="#">View floorplan</a>
+              </p>
+              <p class="desc-title">
+                <br>
+                Property features
+              </p>
+              <div class="desc-rectangled-section">
+                <span>Timber floorboards</span>
+                <span>Air conditioning</span>
+                <span>Heating</span>
+                <span>Courtyard</span>
+                <span>Pool</span>
+                <span>Internal laundry</span>
+                <span>Gas appliances</span>
+                <span>City views</span>
+              </div>
+              <p class="desc-title">
+                <br>
+                Map
+              </p>
+              <div class="map-section">
+                <google-map markers.bind="property_markers" latitude="37.323" longitude="-122.0527"></google-map>
+              </div>
+            </div>
+          </div>
+            
+        </div>
+        <div class="col-md-3 col-sm-3 col-xs-12">
+          <buyer-featured-promo></buyer-featured-promo>
+          <buyer-dashboard-hint-item></buyer-dashboard-hint-item>
+          <buyer-ad-item></buyer-ad-item>
+        </div>
+      </div>
+
+      
+    </div>
+  </div>
+
+  <page-footer></page-footer>
+</template>

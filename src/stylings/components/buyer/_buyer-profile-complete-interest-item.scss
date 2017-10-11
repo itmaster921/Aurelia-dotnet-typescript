@@ -1,0 +1,89 @@
+.buyer-profile-complete-interest-item{
+    margin: 10px 0;
+    .buyer-profile-interest-item-block{
+        input[type="checkbox"] {
+            display: none;
+        }
+
+        input[type="checkbox"]:checked + .btn-group > label span {
+            font-size: 26px;
+            font-size: 2.6rem;
+            width: 16px;
+        }
+
+        input[type="checkbox"] + .btn-group > label span {
+            font-size: 26px;
+            font-size: 2.6rem;
+            width: 16px;
+        }
+
+        input[type="checkbox"]:checked + .btn-group > label:first-child{
+            color: $color-white;
+            background-color: $color-link;
+            border: 1px solid $color-border;
+            border-right: 0;
+            border-top-left-radius: 4px !important;
+            border-bottom-left-radius: 4px !important;
+            
+            &:hover{
+                background-color: $color-lightgreen !important;
+                border: solid 1px $color-border !important;
+                border-right: 0;
+            }
+            
+        }
+        
+        input[type="checkbox"] + .btn-group > label:first-child{
+            background-color: $color-profile-card-bg;
+            color: $color-border;
+            border: solid 1px $color-border;
+            border-right: 0;
+            border-top-left-radius: 4px !important;
+            border-bottom-left-radius: 4px !important;
+            
+            &:hover{
+                background-color: lighten($color-link, 10%) !important;
+                color: $color-white;
+                border: solid 1px $color-border !important;
+                border-right: 0;
+            }
+        }
+        
+        input[type="checkbox"] + .btn-group > label:last-child{
+            margin: 0;
+            padding: 10.5px 40px 10.5px 10px;
+            font-size: 14px;
+            font-size: 1.4rem;
+            -webkit-font-smoothing: antialiased;
+            background-color: $color-white;
+            color: $color-register-widget-bg;
+            border: solid 1px $color-border;
+            border-left: 0;
+            box-shadow: none;
+            border-top-right-radius: 4px !important;
+            border-bottom-right-radius: 4px !important;
+        }
+
+        input[type="checkbox"] + .btn-group > label span:first-child {
+            font-size: 26px;
+            font-size: 2.6rem;
+            display: none;
+        }
+
+        input[type="checkbox"] + .btn-group > label span:last-child {
+            display: inline-block;   
+        }
+
+        input[type="checkbox"]:checked + .btn-group > label span:first-child {
+            font-size: 26px;
+            font-size: 2.6rem;
+            display: inline-block;
+            &:before{
+                margin-left: -3px;
+            }
+        }
+        input[type="checkbox"]:checked + .btn-group > label span:last-child {
+            display: none;   
+        }
+    }
+}

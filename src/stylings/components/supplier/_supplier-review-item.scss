@@ -1,0 +1,39 @@
+.supplier-review-item-block {
+    margin-bottom: 25px;
+
+    .supplier-review-item-title {
+        margin-bottom: 14px;
+        
+        img {
+            width: 35px;
+            height: 35px;
+            margin-right: 11px;
+            border-radius: 50%;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .supplier-review-item-caption {
+            font-size: 14px;
+            font-size: 1.4rem;
+            font-weight: 400;
+            display: inline-block;
+            vertical-align: top;
+
+            .star-ratings-css {
+                display: block;
+                margin-left: 0;
+            }
+        }
+    }
+
+    .supplier-review-item-content {
+        font-size: 14px;
+        font-size: 1.4rem;
+    }
+
+    .supplier-review-item-desc {
+        font-size: 12px;
+        font-size: 1.2rem;
+    }
+}

@@ -1,0 +1,22 @@
+<template>
+    <div class="supplier-filter">
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search by suburb" aria-label="...">
+            <span class="input-splitter"></span>
+            <div class="input-group-btn">
+                <button class="btn btn-default dropdown-toggle" type="button" id="distance-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <span>25km</span>
+                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="distance-dropdown">
+                    <li><a href="#">5km</a></li>
+                    <li><a href="#">10km</a></li>
+                    <li><a href="#">15km</a></li>
+                    <li><a href="#">20km</a></li>
+                    <li><a href="#">25km</a></li>
+                </ul>
+                <button type="button" class="btn btn-primary filter-apply">Apply</button>
+            </div>
+        </div>
+    </div>
+</template>

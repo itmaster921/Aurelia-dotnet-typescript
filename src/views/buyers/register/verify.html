@@ -1,0 +1,25 @@
+<template>
+  <div class="main-content verify-page">
+    <div class="container">
+      <div class="row">
+          <div class="logo"></div>
+      </div>
+      <div class="row">
+          <div class="col col-sm-8 col-md-6 centered">
+            <h1>Verify your account</h1>
+            <h3>Welcome to Kohab! Before we get started,</h3>
+            <h3>please verify your account.</h3>
+            <div class="row">
+              <div class="col-sm-8 col-sm-offset-2">
+                <div class="temp-form m-t-30">
+                  <input type="text" class="input-value" placeholder="Email" value.bind="inputValue.email" />
+                  <input type="text" class="input-value" placeholder="Verification Number" value.bind="inputValue.token" />
+                </div>
+              </div>
+            </div>
+            <button class="btn-confirm" click.delegate="verfiyEmail()">Confirm email</button>
+          </div>
+      </div>
+    </div>
+  </div>
+</template>

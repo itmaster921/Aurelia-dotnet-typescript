@@ -1,0 +1,109 @@
+.buyer-profile-matches-item {
+    
+    display: inline-block;
+    margin: 10px 6px 10px 6px;
+    text-align: center;
+    width: 190px;
+    height: 260px;
+    background-color: $color-profile-card-bg;
+
+    .profile-card {
+
+        display: block;
+        
+        h4 {
+
+            display: block;
+            margin-top: 13px;
+            margin-bottom: 8px;
+            font-size: 1.6rem;
+            line-height: 2.2rem;
+            font-weight: 400;
+            color: $color-register-bg;
+            -webkit-font-smoothing: antialiased;
+
+        }
+
+        label {
+
+            display: block;
+            margin-bottom: 17px;
+            font-size: 1.4rem;
+            line-height: 2rem;
+            font-weight: 400;
+            color: $color-link;
+            -webkit-font-smoothing: antialiased;
+
+        }
+
+        .profile-section {
+            
+            position: relative;
+            padding-top: 20px;
+
+            .img-profile {
+
+                border-radius: 50%;
+                max-width: 100px;
+                width: 100%;
+
+            }
+            
+            span {
+
+                position: absolute;
+                display: block;
+                background-image: url('/images/tick_image.png');
+                width: 24px;
+                height: 24px;
+                background-size: contain;
+                right: 30%;
+                bottom: 0;
+
+            }
+
+            .button-cross {
+            
+                position: absolute;
+                top: 5px;
+                right: 25px;
+                height: 15px;
+                width: 15px;
+                font-size: 20px;
+                color: $color-border;
+                
+                &:hover, &:active {
+
+                    font-size: 21px;
+                    color: darken($color-border, 10%);
+
+                }
+
+            }
+            
+            
+        }
+
+        .space-right {
+
+            margin-right: 5px;
+
+        }
+
+        
+
+        .btn-connect {
+
+            padding: 9px 0px;
+            width: 100%;
+            max-width: 190px;
+            font-size: 16px;
+            font-weight: 300;
+            border-radius: 0;
+            color: $color-white;
+            background-color: $color-register-bg;
+            -webkit-font-smoothing: antialiased;
+
+        }
+    }
+}

@@ -1,0 +1,68 @@
+// Modify the theme of Bootstrap
+.btn {
+    border-radius: 0 !important;
+}
+
+.btn-primary {
+    &:hover, &:focus {
+        background-color: $color-nav-blue-hover !important;
+        border-color: $color-nav-blue-hover !important;
+    }
+}
+
+// Basic aligning
+.left-aligned {
+    float: left;
+}
+
+.right-aligned {
+    float: right;
+}
+
+// Make all columns in Grid system have same heights
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+}
+
+.white-bg {
+    background-color: $color-white !important;
+}
+
+.transparent-bg {
+    background-color: transparent !important;
+}
+
+// Apply style for Anchor Tag
+.main-content {
+    a {
+        color: $color-link;
+
+        &:hover, &:focus {
+            cursor: pointer;
+            text-decoration: none;
+            color: $color-lightgreen;
+        }
+    }
+}
+
+// Vertical separator with 47*2 size green color
+.line-separator {
+    display: inline-block;
+    width: 47px;
+    height: 2px;
+    border-radius: 1px;
+    background-color: $color-link;
+}
+
+.text-link {
+    color: $color-link;
+}
+// Make the columns in Grid system to fill the whole widths if they are less than criteria width.
+@media (max-width: 480px) {
+    .col-xs-6 {
+        width: 100% !important;       
+    }
+}

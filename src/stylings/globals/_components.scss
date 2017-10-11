@@ -1,0 +1,76 @@
+// Star Rating
+.star-ratings-css {
+  unicode-bidi: bidi-override;
+  color: $color-nav-blue;
+  font-size: 15px;
+  font-size: 1.5rem;
+  height: 15px;
+  width: 65px;
+  margin: 0 auto;
+  position: relative;
+  padding: 0;
+  text-shadow: 0px 1px 0 $color-nav-blue;
+  display: inline-block;
+  margin-right: 10px;
+  
+  &-top {
+    padding: 0;
+    opacity: 1;
+    position: absolute;
+    z-index: 1;
+    display: block;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+  }
+  &-bottom {
+    opacity: 0.2;
+    padding: 0;
+    display: block;
+    z-index: 0;
+  }
+}
+
+.star-ratings-large {
+  font-size: 30px;
+  font-size: 3rem;
+  height: 30px;
+  width: 130px;
+  $color: white;
+  text-shadow: none;
+}
+
+// Give Star Rating
+.star-rating-give { 
+  border: none;
+  display: inline-block;
+  float: left;
+}
+
+.star-rating-give > input { display: none; } 
+.star-rating-give > label:before { 
+  margin: 2px;
+  font-size: 12.5px;
+  font-size: 1.25em;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005";
+}
+
+.star-rating-give > label { 
+  color: $color-nav-blue;
+  opacity: 0.2;
+  display: inline-block;
+  float: right;
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.star-rating-give > input:checked ~ label, /* show gold star when clicked */
+.star-rating-give:not(:checked) > label:hover, /* hover current star */
+.star-rating-give:not(:checked) > label:hover ~ label { opacity: 1;  } /* hover previous stars in list */
+
+.star-rating-give > input:checked + label:hover, /* hover current star when changing rating */
+.star-rating-give > input:checked ~ label:hover,
+.star-rating-give > label:hover ~ input:checked ~ label, /* lighten current selection */
+.star-rating-give > input:checked ~ label:hover ~ label { opacity: 0.7;  } 

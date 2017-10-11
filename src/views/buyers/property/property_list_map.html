@@ -1,0 +1,66 @@
+
+<template>
+  <require from="./../../../resources/elements/common/page-header"></require>
+  <require from="./../../../resources/elements/common/page-footer"></require>
+  <require from="./../../../resources/elements/common/social-network-group"></require>
+  <require from="./../../../resources/elements/buyer/buyer-featured-promo"></require>
+  <require from="./../../../resources/elements/buyer/buyer-dashboard-hint-item"></require>
+  <require from="./../../../resources/elements/buyer/buyer-ad-item"></require>
+  <require from="./../../../resources/elements/buyer/buyer-property-item"></require>
+
+  <page-header></page-header>
+  <div class="main-content property-list-map-page">
+    <div class="container-fluid">
+       <div class="container">
+          <div class="search-bar">
+            <a class="btn-toogle-property">Show Property</a>
+            <img src="images/Icon_Search.png" alt="Search Icon" >
+            <input type="text" placeholder="" />
+          </div>
+       </div>
+      <div class="content-section">
+        <div class="map-section">
+          <google-map markers.bind="property_markers" latitude="37.323" longitude="-122.0527" class="google-map"></google-map>
+        </div>
+        <div class="left-slide">
+          <div class="filter-bar">
+            <div class="left-widget">
+              <img src="images/Icon_Filter.png" alt="IconFilter">
+              <span>Filters</span>
+            </div>
+            <div class="right-widget">
+              <img src="images/Icon_Hamburger.png" alt="IconFilter">
+              <img src="images/icon_star_menu.png" alt="IconFilter">
+            </div>
+          </div>
+
+          <div class="property-listings">
+            <div class="row">
+              <div class="col-md-6">
+                <buyer-property-item></buyer-property-item>
+              </div>
+              <div class="col-md-6">
+                <buyer-property-item></buyer-property-item>
+              </div>
+              <div class="col-md-6">
+                <buyer-property-item></buyer-property-item>
+              </div>
+              <div class="col-md-6">
+                <buyer-property-item></buyer-property-item>
+              </div>
+              <div class="col-md-6">
+                <buyer-property-item></buyer-property-item>
+              </div>
+              <div class="col-md-6">
+                <buyer-property-item></buyer-property-item>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+    </div>
+    
+  </div>
+</template>

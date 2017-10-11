@@ -1,0 +1,58 @@
+<template>
+  <require from="./../../resources/elements/common/page-header"></require>
+  <require from="./../../resources/elements/common/page-footer"></require>
+  <require from="./../../resources/elements/common/contact-info"></require>
+  <require from="./../../resources/elements/buyer/buyer-featured-promo"></require>
+  <require from="./../../resources/elements/buyer/buyer-dashboard-hint-item"></require>
+  <require from="./../../resources/elements/buyer/buyer-ad-item"></require>
+
+  <page-header></page-header>
+  <div class="main-content">
+    <div class="container">
+      <h1>Article title lorem ipsum dolor sit amet consectetuer adipsling elit molestie cras</h1>
+      <div class="supplier-article-block">
+        <div class="row">
+          
+          <div class="col-md-9 col-sm-8 col-xs-12">
+            <div class="supplier-article-content">
+              <!--<div class="supplier-article-media-wrapper">-->
+              <img src="/images/supplier_image.jpg">
+              <!--</div>-->
+              <h3>The sub-heading or article synopsis goes here lorem ipsum dolor sit amet consectetur adipscing faucibus finibus a turpis sed consequat ex urna.</h3>
+              <div class="article-splitter">
+                <span></span>
+              </div>
+              <div class="supplier-article-description">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget molestie elit. Cras nec enim in felis eleifend mollis sit amet in lorem. Etiam eget lorem nec quam faucibus finibus a a turpis. Sed consequat ex urna, in facilisis eros interdum sit amet.</p>
+                <p>Etiam id ipsum est. Sed sed molestie est. Vestibulum imperdiet nulla ac <a href="#">ipsum fringilla</a>, vitae faucibus lacus rutrum. In mattis fringilla viverra. Nullam fringilla massa et euismod vehicula. Nullam egestas maximus mauris id laoreet.</p>
+                <p>Morbi at turpis turpis. Ut non ligula sed leo elementum ornare. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce scelerisque, magna quis condimentum pulvinar, dolor ligula feugiat odio, eu vulputate neque nibh eu nisl. Etiam volutpat libero nulla, non eleifend mi scelerisque ut. Integer pulvinar, dui nec placerat iaculis, metus mauris molestie libero, consequat euismod orci mi vel enim. Etiam placerat sed ligula eu congue. In hac habitasse platea dictumst. </p>
+                <p class="article-highlighted">Aenean non finibus eros, a semper sapien. Curabitur nec dolor eget lacus faucibus tempor id a massa. Duis et tellus ante. Mauris maximus non ante vitae blandit. </p>
+                <p>Ut tincidunt tincidunt justo non dictum. Proin erat elit, semper vitae quam a, ultrices congue sem. Suspendisse ac justo a purus venenatis egestas. Duis eget laoreet diam, lacinia placerat augue.</p>
+                <p>Vestibulum vel ante dignissim massa feugiat malesuada. Praesent tempor ante sed gravida viverra. Cras at molestie velit. Aenean a odio vestibulum, finibus risus sit amet, ultrices nibh. Sed vestibulum vel odio consectetur convallis: </p>
+                <ul>
+                  <li>Donec gravida nulla arcu</li>
+                  <li>Aliquam semper est ullamcorper </li>
+                  <li>Ut libero libero interdum pulvinar tristique</li>
+                  <li>Morbi lacinia urna ut libero mattis tincidunt</li>
+                </ul>
+                
+                <p>In hac habitasse platea dictumst. Cras vel nisi vitae turpis condimentum viverra. In et justo pretium, semper metus vel, laoreet ligula. Nam eu commodo augue. Vestibulum pellentesque magna mollis, euismod ex ac, aliquet justo. Aliquam faucibus dui elementum purus dignissim pharetra. Proin tempor lacinia tempus. Etiam eget lacus quam. Mauris ipsum tellus, <a href="#">gravida in maximus</a> sit amet, rhoncus vitae sem. Nunc laoreet malesuada quam molestie viverra. Praesent in magna nisl. In quis turpis suscipit, accumsan est eu, tincidunt eros. Etiam sagittis diam vitae viverra consequat.</p>
+                
+              </div>
+              <div class="supplier-article-action">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-4 col-xs-12">
+            <contact-info  show-rating.bind=true show-social-net.bind=true></contact-info>
+            <buyer-featured-promo></buyer-featured-promo>
+            <buyer-dashboard-hint-item></buyer-dashboard-hint-item>
+            <buyer-ad-item></buyer-ad-item>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <page-footer></page-footer>
+
+</template>

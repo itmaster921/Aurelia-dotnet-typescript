@@ -1,0 +1,25 @@
+<template>
+  <require from="./../../resources/elements/common/page-header"></require>
+  <require from="./../../resources/elements/common/page-footer"></require>
+  <require from="./../../resources/elements/supplier/supplier-categories"></require>
+  <require from="./../../resources/elements/supplier/supplier-filter"></require>
+  <require from="./../../resources/elements/supplier/supplier-list"></require>
+
+  <page-header></page-header>
+  <div class="main-content">
+    <div class="container">
+      <h1>Find professionals in your area</h1>
+      <div class="row main-block">
+        <div class="col-md-3 col-sm-3">
+          <supplier-categories></supplier-categories>
+        </div>
+        <div class="col-md-9 col-sm-9">
+          <supplier-filter></supplier-filter>
+          <supplier-list additional-class="supplier-added-padding"></supplier-list>
+        </div>
+      </div>
+    </div>
+  </div>
+  <page-footer></page-footer>
+
+</template>

@@ -1,0 +1,86 @@
+<template>
+  <require from="./../../../resources/elements/buyer/buyer-profile-interest-item"></require>
+  <require from="./../../../resources/elements/buyer/buyer-profile-dropdown-item"></require>
+  
+    <div class="main-content create-profile-page">
+    <div class="container">
+      <div class="col-md-9 col-md-offset-1">
+        <div class="row">
+          <h1>Let's create your profile</h1>
+          <h3 class="sub-title">so we can find the perfect kohabitator for you</h3>
+        </div>
+
+        <div class="centered label-interest">
+          <label>Areas I'm intersted in:</label>
+          <input type="text" class="input-value" placeholder="Start typing suburb or postcode" />
+          <ul><li><input type="radio" id="f-option" name="selector"/><label for="f-option">Include surrounding suburbs</label><div class="check"></div></li></ul>
+        </div>
+
+        <div class="row">
+          <h3>Properties I'm intersted in (select all that apply):</h3>
+          <buyer-profile-interest-item></buyer-profile-interest-item>
+          <buyer-profile-interest-item></buyer-profile-interest-item>
+          <buyer-profile-interest-item></buyer-profile-interest-item>
+        </div>
+
+        <div class="row">
+          <buyer-profile-interest-item></buyer-profile-interest-item>
+          <buyer-profile-interest-item></buyer-profile-interest-item>
+          <buyer-profile-interest-item></buyer-profile-interest-item>
+        </div>
+        
+        <div class="row">
+            <buyer-profile-dropdown-item></buyer-profile-dropdown-item>
+            <buyer-profile-dropdown-item></buyer-profile-dropdown-item>
+            <buyer-profile-dropdown-item></buyer-profile-dropdown-item>
+        </div>
+        
+        <div class="row">
+          <h3>Interests (select all that apply):</h3>
+          <buyer-profile-interest-item></buyer-profile-interest-item>
+          <buyer-profile-interest-item></buyer-profile-interest-item>
+          <buyer-profile-interest-item></buyer-profile-interest-item>
+        </div>
+
+        <div class="row">
+          <buyer-profile-interest-item></buyer-profile-interest-item>
+          <buyer-profile-interest-item></buyer-profile-interest-item>
+          <buyer-profile-interest-item></buyer-profile-interest-item>
+        </div>
+
+        <div class="row">
+          <buyer-profile-interest-item></buyer-profile-interest-item>
+          <buyer-profile-interest-item></buyer-profile-interest-item>
+          <buyer-profile-interest-item></buyer-profile-interest-item>
+        </div>
+
+        <div class="row">
+          <buyer-profile-interest-item></buyer-profile-interest-item>
+          <buyer-profile-interest-item></buyer-profile-interest-item>
+          <buyer-profile-interest-item></buyer-profile-interest-item>
+        </div>
+
+        <div class="row">
+          <buyer-profile-interest-item></buyer-profile-interest-item>
+          <buyer-profile-interest-item></buyer-profile-interest-item>
+          <buyer-profile-interest-item></buyer-profile-interest-item>
+        </div>
+        <div class="row">
+          <buyer-profile-interest-item></buyer-profile-interest-item>
+          <buyer-profile-interest-item></buyer-profile-interest-item>
+        </div>
+
+        <div class="row file-uploader">
+          <h3>Choose a profile photo:</h3>
+          <label class="file-input-uploader">
+              <input type="file" required/>
+              <span>Select file from computer</span>
+          </label>
+          <!--<input type="file" id="file-uploader" accept="image/*"/>-->
+        </div>
+
+        <button class="submit"><img class="small-logo"/>Create my profile</button>
+      </div>
+    </div>
+  </div>
+</template>

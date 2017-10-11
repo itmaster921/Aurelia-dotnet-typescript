@@ -1,0 +1,49 @@
+.buyer-profile-matching-item {
+    padding: 20px 0px;
+    position: relative;
+    border-bottom: solid 1px $color-border;
+    .profile-image-section {
+        display: inline-block;
+        .img-profile {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+        }
+    }
+    .profile-name-section {
+        display: inline-block;
+        width: 50%;
+        padding-left: 10px;
+        vertical-align: middle;
+        p {
+            font-size: 16px;
+            font-size: 1.6rem;
+            font-weight: 400;
+            margin: 0;
+        }
+        span{
+            display: block;
+        }
+    }
+    .profile-connect-section {
+        display: inline-block;
+        .btn-connect {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            font-size: 14px;
+            font-size: 1.4rem;
+            padding: 4px 30px;
+            margin-bottom: 20px;
+        }
+    }
+    .close-profile {
+        position: absolute;
+        right: 0;
+        top: 20px;
+        width: 15px;
+        height: 15px;
+        background-image: url('images/cross_image.png');
+        cursor: pointer;
+    }
+}

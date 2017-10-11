@@ -1,0 +1,35 @@
+<template>
+  <require from="./../../resources/elements/common/page-header"></require>
+  <require from="./../../resources/elements/common/page-footer"></require>
+  <require from="./../../resources/elements/common/contact-info"></require>
+  <require from="./../../resources/elements/common/contact-form"></require>
+  <require from="./../../resources/elements/supplier/supplier-main-info"></require>
+  <require from="./../../resources/elements/supplier/supplier-articles"></require>
+  <require from="./../../resources/elements/supplier/supplier-reviews"></require>
+  <require from="./../../resources/elements/buyer/buyer-featured-promo"></require>
+  <require from="./../../resources/elements/buyer/buyer-dashboard-hint-item"></require>
+  <require from="./../../resources/elements/buyer/buyer-ad-item"></require>
+
+  <page-header></page-header>
+  <div class="main-content supplier-page">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-sm-3">
+          <contact-info  show-rating.bind=true show-social-net.bind=true></contact-info>
+          <contact-form></contact-form>
+        </div>
+        <div class="col-md-6 col-sm-6">
+          <supplier-main-info></supplier-main-info>
+          <supplier-articles></supplier-articles>
+          <supplier-reviews></supplier-reviews>
+        </div>
+        <div class="col-md-3 col-sm-3 col-xs-12">
+          <buyer-featured-promo></buyer-featured-promo>
+          <buyer-dashboard-hint-item></buyer-dashboard-hint-item>
+          <buyer-ad-item></buyer-ad-item>
+        </div>
+      </div>
+    </div>
+  </div>
+  <page-footer></page-footer>
+</template>

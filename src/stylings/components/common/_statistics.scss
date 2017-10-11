@@ -1,0 +1,55 @@
+.statistics-block {
+    background-color: $color-white;
+    padding: 0 20px 14px;
+    margin-bottom: 30px;
+
+    h4 {
+        padding: 18px 0;
+        margin: 0;
+        font-size: 20px;
+        font-size: 2rem;
+    }
+
+    .stats-items {
+        color: $color-white;
+
+        .stats-item {
+            margin-bottom: 10px;
+            display: table;
+            width: 100%;
+            height: 100%;
+
+            .stats-num {
+                
+                background-color: $color-link;
+                width: 25%;
+                display: table-cell;
+                vertical-align: middle;
+                text-align: center;
+                padding: 4px 0;
+
+                span {
+                    font-size: 30px;
+                    font-size: 3rem;
+                }
+            }
+
+            .stats-caption {
+                display: inline-block;
+                width: 75%;
+                background-color: $color-lightgreen;
+                text-align: center;
+                display: table-cell;
+                vertical-align: middle;
+
+                span {
+                    padding-left: 24px;
+                    background-repeat: no-repeat;
+                    background-position: left 3px center;
+                    font-size: 16px;
+                    font-size: 1.6rem;
+                }
+            }
+        }
+    }
+}

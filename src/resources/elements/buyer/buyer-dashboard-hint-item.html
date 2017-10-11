@@ -1,0 +1,13 @@
+<template>
+  <div class="buyer-dashboard-hint-item">
+    <h3>Hints &amp; help</h3>
+    <div repeat.for="item of hintlist" class="module-article-thumb">
+      <div class="image-section">
+        <img src="/images/image_hints_thumb.png" alt=""/>
+      </div>
+      <div class="content-section">
+        <p>${item.desc}</br><a href="/">Read more</a></p>
+      </div>
+    </div>  
+  </div>
+</template>

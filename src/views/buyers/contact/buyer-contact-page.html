@@ -1,0 +1,401 @@
+<template>
+    <require from="./../../../resources/elements/common/page-header"></require>
+    <require from="./../../../resources/elements/common/page-footer"></require>
+    <require from="./../../../resources/elements/buyer/buyer-featured-promo"></require>
+    <require from="./../../../resources/elements/buyer/buyer-dashboard-hint-item"></require>
+    <require from="./../../../resources/elements/buyer/buyer-ad-item"></require>
+    <page-header></page-header>
+    <div class="main-content buyer-contact-page">
+    <div class="container">
+      <div class="page-title">
+          <a><i class="fa fa-angle-left"></i>Back to Dashboard</a>
+      </div>
+     <div class="contactors-profile">
+          <h2>James & May</h2>
+          <div class="buyer-profile-picture-wrapper">
+            <img class="profile-image" src="images/profile_pic1.png">
+            <img class="logo-image" src="images/kohab_logo_circle.png">
+            <img class="profile-image" src="images/profile_pic3.jpg">
+          </div>
+
+      </div>
+     
+      <div class="row">
+        <div class="col-md-3 col-sm-3 col-xs-12">
+          <div class="buyer-profile-details-section">
+            <div class="buyer-profile-info-subsection">
+              <div class="buyer-profile-picture-wrapper">
+                <img class="profile-image" src="images/profile_pic3.jpg">
+                <img class="profile-checked" src="images/icon_green_tick.png">
+              </div>
+              <div class="buyer-profile-member-wrapper">
+                <p class="member-name">James Arrowsmith</p>
+                <p class="member-mood">Looking to invest with an owner/occupier</p>
+              </div>
+            </div>
+            <div class="buyer-profile-contact-form-subsection">
+              <a class="btn btn-primary">$500k budget</a>
+            </div>
+          </div>      
+          <div class="buyer-profile-details-section contactor-section">
+            <div class="buyer-profile-info-subsection">
+              <div class="buyer-profile-picture-wrapper">
+                <img class="profile-image" src="images/profile_pic3.jpg">
+                <img class="profile-checked" src="images/icon_green_tick.png">
+              </div>
+              <div class="buyer-profile-member-wrapper">
+                <p class="member-name">May Huang</p>
+                <p class="member-mood">Looking to invest with an owner/occupier</p>
+              </div>
+            </div>
+            <div class="buyer-profile-contact-form-subsection">
+              <a class="btn btn-primary">$400k budget</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-12 ">
+          <div class="middle-container">
+            <div class="contact-message-input-widget">
+              <p class="contact-message-widget-title">Messages</p>
+              <div class="input-message-widget">
+                <input type="text" placeholder="Share a property link or send a message..." />
+                <button class="btn btn-primary btn-post">Post</button>
+              </div>
+            </div>
+
+            <div class="contact-message-block-left">
+              <div class="message-profile">
+                <img class="profile-image" src="images/profile_pic3.jpg">
+                <p class="message-member-name">May</p>
+              </div>
+              <div class="message-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget molestie elit. Cras nec enim in felis eleifend mollis sit amet in lorem. Etiam eget lorem nec quam faucibus finibus a a turpis. Sed consequat ex urna, in facilisis eros interdum sit amet.</p>
+                <p class="message-date">12 Feb 2017</p>
+              </div>
+            </div>
+
+            <div class="contact-message-block-right">
+              <div class="message-profile">
+                <p class="message-member-name">James</p>
+                <img class="profile-image" src="images/profile_pic1.png">
+              </div>
+              <div class="message-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget molestie elit. Cras nec enim in felis eleifend mollis sit amet in lorem. Etiam eget lorem nec quam faucibus finibus a a turpis. Sed consequat ex urna, in facilisis eros interdum sit amet.</p>
+                <p class="message-date">11 Feb 2017</p>
+              </div>
+            </div>
+
+            <!--Proeprty Section-->
+            <div class="contact-property-message">
+              <div class="message-profile">
+                <img class="profile-image" src="images/profile_pic3.jpg">
+                <p class="message-member-name">May</p>
+              </div>
+              <div class="property-featured-image">
+                <img src="images/property_image.jpg" alt="Property">
+              </div>
+              <div class="property-info-section">
+                <div class="property-investment-section">
+                  <p class="property-invest-budget">$1,250,000</p>
+                  <p class="property-invest-address">97 Windsor Street, Paddington, NSW 2021</p>
+                  <p class="property-invest-schedule"><i class="fa fa-calendar"></i>Next inspection: Saturday 22nd 10am</p>
+                </div>
+                <div class="property-visual-info-section">
+                  <div class="info-numbers">
+                    <div class="info-number">
+                      <div class="image-wrapper">
+                        <img src="images/icon_bed_green.png">
+                      </div>
+                      <span>4</span>
+                    </div>
+                    <div class="info-number">
+                      <div class="image-wrapper">
+                        <img src="images/icon_bathtube_green.png">
+                      </div>
+                      <span>3</span>
+                    </div>
+                    <div class="info-number">
+                      <div class="image-wrapper">
+                        <img src="images/icon_car_green.png">
+                      </div>
+                      <span>2</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="property-price-section">
+                <div class="range-slider">
+                  <span class="range-slider-name">Home price</span>
+                  <span class="range-slider-value">$1.25M</span>
+                  <input class="range-slider-widget" type="range" value="75" min="0" max="100">
+                </div>
+                <div class="range-slider">
+                  <span class="range-slider-name">Deposit</span>
+                  <span class="range-slider-value">$70K</span>
+                  <input class="range-slider-widget" type="range" value="25" min="0" max="100">
+                </div>
+                <div class="range-slider">
+                  <span class="range-slider-name">Interest rate</span>
+                  <span class="range-slider-value">$4.19%</span>
+                  <input class="range-slider-widget" type="range" value="41.9" min="0" max="100">
+                </div>
+              </div>
+              <div class="property-state-section">
+                <div class="row">
+                  <div class="col-sm-4 nopadding">
+                    <div class="green-board">
+                      <p class="month-repay">$2,451</p>
+                      <p class="description">monthly repayments</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-4 nopadding">
+                    <div class="green-board">
+                      <p class="month-repay">$850</p>
+                      <p class="description">weekly rent estimate</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-4 nopadding">
+                    <div class="green-board">
+                      <p class="month-repay">2.8%</p>
+                      <p class="description">yield</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="contact-message-input-section">
+                <div class="row">
+                  <div class="col-sm-1">
+                    <div class="message-profile">
+                      <img class="profile-image" src="images/profile_pic3.jpg">
+                    </div>
+                  </div>
+                  <div class="col-sm-9">
+                    <div class="message-content">
+                      <p><span class="message-member-name">May</span>I found this great looking property. Take a look and let me know what you think.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-2">
+                    <div class="message-sent-time">
+                      <p>9 Feb 2017</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="contact-message-input-section">
+                <div class="row">
+                  <div class="col-sm-1">
+                    <div class="message-profile">
+                      <img class="profile-image" src="images/profile_pic1.png">
+                    </div>
+                  </div>
+                  <div class="col-sm-9">
+                    <div class="message-content">
+                      <p><span class="message-member-name">James</span>Cool find May! I'm a bit concerned about the potential rental income. Lorem sit amet adips?</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-2">
+                    <div class="message-sent-time">
+                      <p>9 Feb 2017</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="contact-message-input-section">
+                <div class="row">
+                  <div class="col-sm-1">
+                    <div class="message-profile">
+                      <img class="profile-image" src="images/profile_pic1.png">
+                    </div>
+                  </div>
+                  <div class="col-sm-11">
+                    <div class="comment-input">
+                      <input type="text" placeholder="Write a comment..."/>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-message-block-left">
+              <div class="message-profile">
+                <img class="profile-image" src="images/profile_pic3.jpg">
+                <p class="message-member-name">May</p>
+              </div>
+              <div class="message-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget molestie elit. Cras nec enim in felis eleifend mollis sit amet in lorem. Etiam eget lorem nec quam faucibus finibus a a turpis. Sed consequat ex urna, in facilisis eros interdum sit amet.</p>
+                <p class="message-date">12 Feb 2017</p>
+              </div>
+            </div>
+
+            <div class="contact-message-block-right">
+              <div class="message-profile">
+                <p class="message-member-name">James</p>
+                <img class="profile-image" src="images/profile_pic1.png">
+              </div>
+              <div class="message-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget molestie elit. Cras nec enim in felis eleifend mollis sit amet in lorem. Etiam eget lorem nec quam faucibus finibus a a turpis. Sed consequat ex urna, in facilisis eros interdum sit amet.</p>
+                <p class="message-date">11 Feb 2017</p>
+              </div>
+            </div>
+            <div class="contact-message-block-left">
+              <div class="message-profile">
+                <img class="profile-image" src="images/profile_pic3.jpg">
+                <p class="message-member-name">May</p>
+              </div>
+              <div class="message-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget molestie elit. Cras nec enim in felis eleifend mollis sit amet in lorem. Etiam eget lorem nec quam faucibus finibus a a turpis. Sed consequat ex urna, in facilisis eros interdum sit amet.</p>
+                <p class="message-date">12 Feb 2017</p>
+              </div>
+            </div>
+
+            <div class="contact-message-block-right">
+              <div class="message-profile">
+                <p class="message-member-name">James</p>
+                <img class="profile-image" src="images/profile_pic1.png">
+              </div>
+              <div class="message-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget molestie elit. Cras nec enim in felis eleifend mollis sit amet in lorem. Etiam eget lorem nec quam faucibus finibus a a turpis. Sed consequat ex urna, in facilisis eros interdum sit amet.</p>
+                <p class="message-date">11 Feb 2017</p>
+              </div>
+            </div>
+            <div class="contact-message-block-left">
+              <div class="message-profile">
+                <img class="profile-image" src="images/profile_pic3.jpg">
+                <p class="message-member-name">May</p>
+              </div>
+              <div class="message-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget molestie elit. Cras nec enim in felis eleifend mollis sit amet in lorem. Etiam eget lorem nec quam faucibus finibus a a turpis. Sed consequat ex urna, in facilisis eros interdum sit amet.</p>
+                <p class="message-date">12 Feb 2017</p>
+              </div>
+            </div>
+
+            <div class="contact-message-block-right">
+              <div class="message-profile">
+                <p class="message-member-name">James</p>
+                <img class="profile-image" src="images/profile_pic1.png">
+              </div>
+              <div class="message-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget molestie elit. Cras nec enim in felis eleifend mollis sit amet in lorem. Etiam eget lorem nec quam faucibus finibus a a turpis. Sed consequat ex urna, in facilisis eros interdum sit amet.</p>
+                <p class="message-date">11 Feb 2017</p>
+              </div>
+            </div>
+            <div class="contact-message-block-left">
+              <div class="message-profile">
+                <img class="profile-image" src="images/profile_pic3.jpg">
+                <p class="message-member-name">May</p>
+              </div>
+              <div class="message-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget molestie elit. Cras nec enim in felis eleifend mollis sit amet in lorem. Etiam eget lorem nec quam faucibus finibus a a turpis. Sed consequat ex urna, in facilisis eros interdum sit amet.</p>
+                <p class="message-date">12 Feb 2017</p>
+              </div>
+            </div>
+
+            <div class="contact-message-block-right">
+              <div class="message-profile">
+                <p class="message-member-name">James</p>
+                <img class="profile-image" src="images/profile_pic1.png">
+              </div>
+              <div class="message-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget molestie elit. Cras nec enim in felis eleifend mollis sit amet in lorem. Etiam eget lorem nec quam faucibus finibus a a turpis. Sed consequat ex urna, in facilisis eros interdum sit amet.</p>
+                <p class="message-date">11 Feb 2017</p>
+              </div>
+            </div>
+            <div class="contact-message-block-left">
+              <div class="message-profile">
+                <img class="profile-image" src="images/profile_pic3.jpg">
+                <p class="message-member-name">May</p>
+              </div>
+              <div class="message-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget molestie elit. Cras nec enim in felis eleifend mollis sit amet in lorem. Etiam eget lorem nec quam faucibus finibus a a turpis. Sed consequat ex urna, in facilisis eros interdum sit amet.</p>
+                <p class="message-date">12 Feb 2017</p>
+              </div>
+            </div>
+
+            <div class="contact-message-block-right">
+              <div class="message-profile">
+                <p class="message-member-name">James</p>
+                <img class="profile-image" src="images/profile_pic1.png">
+              </div>
+              <div class="message-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget molestie elit. Cras nec enim in felis eleifend mollis sit amet in lorem. Etiam eget lorem nec quam faucibus finibus a a turpis. Sed consequat ex urna, in facilisis eros interdum sit amet.</p>
+                <p class="message-date">11 Feb 2017</p>
+              </div>
+            </div>
+            <div class="contact-message-block-left">
+              <div class="message-profile">
+                <img class="profile-image" src="images/profile_pic3.jpg">
+                <p class="message-member-name">May</p>
+              </div>
+              <div class="message-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget molestie elit. Cras nec enim in felis eleifend mollis sit amet in lorem. Etiam eget lorem nec quam faucibus finibus a a turpis. Sed consequat ex urna, in facilisis eros interdum sit amet.</p>
+                <p class="message-date">12 Feb 2017</p>
+              </div>
+            </div>
+
+            <div class="contact-message-block-right">
+              <div class="message-profile">
+                <p class="message-member-name">James</p>
+                <img class="profile-image" src="images/profile_pic1.png">
+              </div>
+              <div class="message-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget molestie elit. Cras nec enim in felis eleifend mollis sit amet in lorem. Etiam eget lorem nec quam faucibus finibus a a turpis. Sed consequat ex urna, in facilisis eros interdum sit amet.</p>
+                <p class="message-date">11 Feb 2017</p>
+              </div>
+            </div>
+            <div class="contact-message-block-left">
+              <div class="message-profile">
+                <img class="profile-image" src="images/profile_pic3.jpg">
+                <p class="message-member-name">May</p>
+              </div>
+              <div class="message-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget molestie elit. Cras nec enim in felis eleifend mollis sit amet in lorem. Etiam eget lorem nec quam faucibus finibus a a turpis. Sed consequat ex urna, in facilisis eros interdum sit amet.</p>
+                <p class="message-date">12 Feb 2017</p>
+              </div>
+            </div>
+
+            <div class="contact-message-block-right">
+              <div class="message-profile">
+                <p class="message-member-name">James</p>
+                <img class="profile-image" src="images/profile_pic1.png">
+              </div>
+              <div class="message-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget molestie elit. Cras nec enim in felis eleifend mollis sit amet in lorem. Etiam eget lorem nec quam faucibus finibus a a turpis. Sed consequat ex urna, in facilisis eros interdum sit amet.</p>
+                <p class="message-date">11 Feb 2017</p>
+              </div>
+            </div>
+            <div class="contact-message-block-left">
+              <div class="message-profile">
+                <img class="profile-image" src="images/profile_pic3.jpg">
+                <p class="message-member-name">May</p>
+              </div>
+              <div class="message-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget molestie elit. Cras nec enim in felis eleifend mollis sit amet in lorem. Etiam eget lorem nec quam faucibus finibus a a turpis. Sed consequat ex urna, in facilisis eros interdum sit amet.</p>
+                <p class="message-date">12 Feb 2017</p>
+              </div>
+            </div>
+
+            <div class="contact-message-block-right">
+              <div class="message-profile">
+                <p class="message-member-name">James</p>
+                <img class="profile-image" src="images/profile_pic1.png">
+              </div>
+              <div class="message-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget molestie elit. Cras nec enim in felis eleifend mollis sit amet in lorem. Etiam eget lorem nec quam faucibus finibus a a turpis. Sed consequat ex urna, in facilisis eros interdum sit amet.</p>
+                <p class="message-date">11 Feb 2017</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-3 col-xs-12">
+          <buyer-featured-promo></buyer-featured-promo>
+          <buyer-dashboard-hint-item></buyer-dashboard-hint-item>
+          <buyer-ad-item></buyer-ad-item>
+        </div>
+      </div>
+
+      
+    </div>
+  </div>
+
+    <page-footer></page-footer>
+</template>

@@ -1,0 +1,30 @@
+<template>
+  <require from="./supplier-review-item"></require>
+  <div class="supplier-reviews-block">
+    <h3>Reviews (4)</h3>
+    <div class="supplier-review-form">
+      <textarea placeholder="Write your review..."></textarea>
+      <div class="supplier-review-footer clearfix">
+        <div class="star-rating-give-wrapper">
+          <fieldset class="star-rating-give">
+            <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+            <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+            <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+            <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+            <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+          </fieldset>
+        </div>
+        <span class="supplier-review-rating">Select a star rating</span>
+        <div class="button-wrapper">
+          <button class="btn btn-primary">Submit review</button>
+        </div>
+      </div>
+    </div>
+    <div class="supplier-review-list">
+      <supplier-review-item></supplier-review-item>
+      <supplier-review-item></supplier-review-item>
+      <supplier-review-item></supplier-review-item>
+      <supplier-review-item></supplier-review-item>
+    </div>
+  </div>
+</template>

@@ -1,0 +1,120 @@
+.supplier-feedback-block {
+    display: table;
+    width: 100%;
+    margin-bottom: 30px;
+    font-size: 0;
+    
+    >div {
+        vertical-align: top;
+        height: 100%;
+    }
+
+    .supplier-rating {
+        width: 35%;
+        display: table-cell;
+        background-color: $color-link;
+        text-align: center;
+        vertical-align: middle;
+
+        span {
+            vertical-align: middle;
+            color: $color-white;
+            font-size: 22px;
+            font-size: 2.2rem;
+            font-weight: 300;
+        }
+
+        .star-ratings-large {
+            display: block;
+            margin: 0 auto 10px;
+
+            span {
+                font-size: 30px;
+                font-size: 3rem;
+            }
+        }
+    }
+
+    .supplier-review-num-wrapper {
+        display: table-cell;
+        width: 30%;
+        padding: 0 30px;
+
+        .supplier-review-num {
+            background-color: $color-sub-bg;
+            text-align: center;
+
+            h1 {
+                font-size: 48px;
+                font-size: 4.8rem;
+                margin: 0;
+                padding-top: 34px;
+                display: block;
+            }
+
+            span {
+                font-size: 22px;
+                font-size: 2.2rem;
+                font-weight: 300;
+                padding-bottom: 38px;
+                display: block;
+            }
+        }
+    }
+
+    .supplier-casestudy-num-wrapper {
+        width: 35%;
+        display: table-cell;
+        background-color: $color-sub-bg;
+
+        .supplier-casestudy-num {
+            font-size: 22px;
+            font-size: 2.2rem;
+            font-weight: 300;
+            height: 50%;
+            text-align: center;
+            vertical-align: middle;
+            padding: 23px 0;
+        }
+
+        .supplier-social-network-wrapper {
+            background-color: $color-lightgray;
+            text-align: center;
+            height: 50%;
+        }
+    }
+
+    @media (max-width: $screen-sm-max) {
+        display: block;
+
+        .supplier-rating {
+            width: 100%;
+            display: block;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+
+        .supplier-review-num-wrapper {
+            width: 40%;
+            display: inline-block;
+            padding-left: 0;
+        }
+
+        .supplier-casestudy-num-wrapper {
+            width: 60%;
+            display: inline-block;
+        }
+    }
+
+    @media (max-width: $screen-custom-middle-max) {
+        .supplier-review-num-wrapper, .supplier-casestudy-num-wrapper {
+            width: 100%;
+
+        }
+
+        .supplier-review-num-wrapper {
+            padding-right: 0;
+            margin-bottom: 30px;
+        }
+    }
+}

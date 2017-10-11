@@ -1,0 +1,33 @@
+.supplier-main-info-block {
+    background-color: $color-sub-bg;
+    padding: 18px 18px 27px;
+    margin-bottom: 30px;
+
+    span {
+        color: $color-link;
+    }
+
+    h1 {
+        font-size: 30px;
+        font-size: 3rem;
+        font-weight: 300;
+        margin: 0;
+    }
+
+    h3 {
+        font-size: 20px;
+        font-size: 2rem;
+        font-weight: 300;
+        margin: 11px 0;
+    }
+
+    p {
+        padding-left: 18px;
+        background: url('/images/icon_location_tiny.png') no-repeat left center;
+        background-size: 10px 15px;
+        opacity: 0.4;
+        font-size: 14px;
+        font-size: 1.4rem;
+        margin: 0;
+    }
+}

@@ -1,0 +1,127 @@
+.supplier-filter{
+    background-color: $color-sub-bg;
+    border: 1px solid $color-border;
+    margin-bottom: 13px;
+
+    .input-group {
+        width: 100%;
+        position: relative;
+
+        .input-splitter{
+            position: absolute;
+            right: 294px;
+            width: 1px;
+            background-color: $color-border;
+            top: 0;
+            bottom: 0;
+            z-index: 9999;
+            top: 15px;
+            bottom: 15px;
+        }
+
+        input {
+            height: auto;
+            padding: 13px 0 13px 38px;
+            display: inline-block;
+            background-image: url(/images/icon_location.png);
+            background-repeat: no-repeat;
+            background-position: left 13px center;
+            border: none;
+            font-size: 17px;
+            font-size: 1.7rem;
+            vertical-align: top;
+            width: calc(100% - 294px);
+        }
+
+        .input-group-btn {
+            display: inline-block;
+            vertical-align: top;
+            padding: 14px auto;
+
+            .btn {
+                border: none;
+                font-size: 17px;
+                font-size: 1.7rem;
+                padding: 13px 0;
+            }
+
+            .dropdown {
+                border: none;
+            }
+
+            .filter-apply {
+                width: 164px;   
+            }
+
+            .dropdown-menu {
+                width: calc(100% - 294px);
+
+                li {
+                    a {
+                        font-size: 18px;
+                        font-size: 1.8rem;
+                        padding: 8px 20px;
+                    }
+                }
+            }
+
+            .dropdown-toggle {
+                width: 132px;
+                padding: 11px 0;
+
+                span {
+                    padding: 1px 0;
+                }
+
+                i {
+                    
+                    margin-left: 15px;
+                    font-size: 24px;
+                    font-size: 2.4rem;
+                    transition: 0.6s;
+                }
+            }
+
+            &.open {
+                .dropdown-toggle {
+                    i {
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+
+        }
+            
+    }
+
+    @media(max-width: $screen-xs-max) {
+        .input-group {
+            input {
+                width: 100%;
+            }
+
+            .input-splitter {
+                display: none;
+            }
+
+            .input-group-btn {
+                width: 100%;
+                border-top: solid 1px rgba(11, 50, 75, 0.2);
+
+                .dropdown-toggle {
+                    width: calc(100% - 164px);
+                    margin-left: 0;
+                }
+
+                .filter-apply {
+                    margin-left: 0;
+                    line-height: 1.5;
+                }
+
+                .dropdown-menu {
+                    width: calc(100% - 164px);
+                }
+            }
+        }
+    }
+}

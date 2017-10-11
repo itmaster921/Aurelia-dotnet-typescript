@@ -1,0 +1,32 @@
+<template>
+  <require from="./../../resources/elements/common/page-header"></require>
+  <require from="./../../resources/elements/common/page-footer"></require>
+  <require from="./../../resources/elements/common/contact-info"></require>
+  <require from="./../../resources/elements/common/statistics"></require>
+  <require from="./../../resources/elements/supplier/supplier-list"></require>
+
+  <page-header></page-header>
+    <div class="main-content">
+      <div class="container">
+        <h1>Welcome back, supplier name ${itemCols}</h1>
+        <div class="row main-block">
+          <div class="col-md-4 col-sm-4">
+            <contact-info checked.bind=true info-type="Edit Listing"  show-rating.bind=false show-social-net.bind=false></contact-info>
+            <statistics></statistics>
+          </div>
+          <div class="col-md-8 col-sm-8">
+            <supplier-list item-cols=2 item-component="supplier-article-edititem"></supplier-list>            
+            <!--<div class="supplier-article-list">
+              <h3>Articles and case studies overview</h3>
+              <div class="row">
+                <div class="supplier-article-item">
+                </div>
+              </div>
+            </div>-->
+          </div>
+        </div>
+      </div>
+    </div>
+  <page-footer></page-footer>
+
+</template>

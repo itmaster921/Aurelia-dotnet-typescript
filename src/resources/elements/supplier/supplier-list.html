@@ -1,0 +1,35 @@
+<template>
+    <require from="./supplier-item"></require>
+    <require from="./supplier-special-item"></require>
+    <require from="./supplier-article-edititem"></require>
+    <div class="supplier-list ${additionalClass}">
+        <div if.bind="itemComponent == 'supplier-article-edititem'" class="title-section clearfix">
+            <h3 class="left-aligned">Articles and case studies overview</h3>
+            <a class="right-aligned" href="/">+ add article</a>
+        </div>
+        
+        <div class="row">
+            <div if.bind="itemComponent == 'supplier-item'" repeat.for="item of showlistSpecial" class="col-md-${12/itemCols} col-sm-6 col-xs-6">
+                
+                <supplier-special-item></supplier-special-item>
+                
+            </div>
+            <div repeat.for="item of showlist" class="col-md-${12/itemCols} col-sm-6 col-xs-6">
+                
+                <supplier-item if.bind="itemComponent == 'supplier-item'"></supplier-item>
+                <supplier-article-edititem if.bind="itemComponent == 'supplier-article-edititem'" item-info=${item}></supplier-article-edititem>
+            </div>
+            
+            <!--<supplier-item repeat.for="supplier of supplier_list" class="col-md-4 col-sm-6">
+                
+            </supplier-item>-->
+            <!--<div repeat.for="supplier of supplier_list">
+                <supplier-item supplier.bind="supplier"></supplier-item>
+            </div>-->
+        </div>
+        <div class="list-nav clearfix">
+            <button class="btn btn-primary left-aligned" disabled><i class="fa fa-angle-left" aria-hidden="true"></i> Previous</button>
+            <button class="btn btn-primary right-aligned">Next <i class="fa fa-angle-right" aria-hidden="true"></i></button>
+        </div>
+    </div>
+</template>

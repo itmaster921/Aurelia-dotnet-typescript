@@ -1,0 +1,166 @@
+<template>
+  <require from="./../../../resources/elements/common/page-header"></require>
+  <require from="./../../../resources/elements/common/page-footer"></require>
+  <require from="./../../../resources/elements/buyer/buyer-featured-promo"></require>
+  <require from="./../../../resources/elements/buyer/buyer-dashboard-hint-item"></require>
+  <require from="./../../../resources/elements/buyer/buyer-ad-item"></require>
+  <require from="./../../../resources/elements/buyer/buyer-property-item"></require>
+  <require from="./../../../resources/elements/buyer/buyer-profile-matching-item"></require>
+  <require from="./../../../resources/elements/buyer/buyer-profile-complete-item"></require>
+  
+  <page-header></page-header>
+  <div class="main-content buyer-dashboard">
+    <div class="container">
+        <div class="page-top-section">
+            <div class="profile-image-section">
+                <img class="img-profile" src="/images/profile_pic1.png">
+            </div>
+            <div class="profile-name-section">
+                <h2>Welcome back, James</h2>
+                <span class="text-link">Looking to invest with an owner/occupier for $500K</span>
+            </div>
+        </div>
+        <div class="col-sm-2 col-md-2 nopadding">
+            <div class="left-side-bar-item white-bg" click.delegate="showPage(0, $event)">
+                <a>Home</a>
+            </div>
+            <div class="left-side-bar-item white-bg" click.delegate="showPage(1, $event)">
+                <a>Co-owners</a>
+            </div>
+            <div class="left-side-bar-item white-bg" click.delegate="showPage(2, $event)">
+                <a>Properties</a>
+            </div>
+        </div>
+        <div class="col-sm-7 col-md-7 profile-content">
+            <div if.bind="tabStatus==0" class="set-home-flag">
+                <div if.bind="flagCompleteProfile && !flagProfileSaved" class="profile-complete-widget">
+                    <buyer-profile-complete-item></buyer-profile-complete-item>
+                </div>
+                <div if.bind="(!flagCompleteProfile || flagProfileSaved)" class="complete-profile-alert white-bg">
+                    <p class="alert-title">Latest profile matches</p>
+                    <div if.bind="!flagCompleteProfile" class="no-matching-profile">
+                        <p class="notice-text">You have no profile matches yet. Complete your profile to see a list of possible profile matches.</p>
+                        <button class="btn btn-primary btn-view-all" click.trigger="handleButtonCompleteProfile()">Complete my profile</button>
+                    </div>
+                    <div if.bind="flagProfileSaved" class="has-matching-profile">
+                        <buyer-profile-matching-item></buyer-profile-matching-item>
+                        <buyer-profile-matching-item></buyer-profile-matching-item>
+                        <buyer-profile-matching-item></buyer-profile-matching-item>
+                        <buyer-profile-matching-item></buyer-profile-matching-item>
+                        <button class="btn btn-primary btn-view-all">View all</button>
+                    </div>
+                </div>
+                <div class="property-list-view-section white-bg">
+                    <p class="alert-title">Recently viewed properties</p>
+                    <div class="row nopadding">
+                        <div class="col-md-6">
+                            <buyer-property-item></buyer-property-item>
+                        </div>
+                        <div class="col-md-6">
+                            <buyer-property-item></buyer-property-item>
+                        </div>
+                    </div>
+                    <div class="row nopadding">
+                        <div class="col-md-6">
+                            <buyer-property-item></buyer-property-item>
+                        </div>
+                        <div class="col-md-6">
+                            <buyer-property-item></buyer-property-item>
+                        </div>
+                    </div>
+                </div>
+                <div if.bind="(!flagCompleteProfile || flagProfileSaved)" class="saved-property-alert white-bg">
+                    <p class="alert-title">Recently saved properties</p>
+                    <div if.bind="!flagCompleteProfile" class="no-saved-property">
+                        <p class="notice-text">You have no saved properties yet. Complete your profile to view all property matches and start saving your favorites.</p>
+                        <button class="btn btn-primary btn-view-all" click.trigger="handleButtonCompleteProfile()">Complete my profile</button>
+                    </div>
+                    <div if.bind="flagProfileSaved" class="has-saved-property">
+                        <div class="row nopadding">
+                            <div class="col-md-6">
+                                <buyer-property-item></buyer-property-item>
+                            </div>
+                            <div class="col-md-6">
+                                <buyer-property-item></buyer-property-item>
+                            </div>
+                        </div>
+                        <div class="row nopadding">
+                            <div class="col-md-6">
+                                <buyer-property-item></buyer-property-item>
+                            </div>
+                            <div class="col-md-6">
+                                <buyer-property-item></buyer-property-item>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary btn-view-all">View all</button>
+                    </div>
+                </div>
+            </div>
+            <div if.bind="tabStatus==1" class="set-co-owners-flag">
+                <div class="invitation-connect-section template-box-default white-bg">
+                    <p class="alert-title">Invitations to connect(3)</p>
+                    <div class="has-invitation-profile">
+                        <buyer-profile-matching-item></buyer-profile-matching-item>
+                        <buyer-profile-matching-item></buyer-profile-matching-item>
+                        <buyer-profile-matching-item></buyer-profile-matching-item>
+                    </div>
+                </div>
+                <div class="complete-profile-alert white-bg">
+                    <p class="alert-title">Lastest profile matches</p>
+                    <div class="has-matching-profile">
+                        <buyer-profile-matching-item></buyer-profile-matching-item>
+                        <buyer-profile-matching-item></buyer-profile-matching-item>
+                        <buyer-profile-matching-item></buyer-profile-matching-item>
+                        <buyer-profile-matching-item></buyer-profile-matching-item>
+                        <buyer-profile-matching-item></buyer-profile-matching-item>
+                        <buyer-profile-matching-item></buyer-profile-matching-item>
+                        <buyer-profile-matching-item></buyer-profile-matching-item>
+                        <buyer-profile-matching-item></buyer-profile-matching-item>
+                        <buyer-profile-matching-item></buyer-profile-matching-item>
+                        <buyer-profile-matching-item></buyer-profile-matching-item>
+                        <button class="btn btn-primary btn-view-all">Load more</button>
+                    </div>
+                </div>
+            </div>
+            <div if.bind="tabStatus==2" class="set-properties-flag">
+                <div class="property-list-view-section white-bg">
+                    <div class="option-select-right">
+                        <a href="#">Matches</a>
+                        <span> | <span>
+                        <a href="#">Saved</a>
+                    </div>
+                    <p class="alert-title">Properties</p>
+                    <div class="row nopadding">
+                        <div class="col-md-6">
+                            <buyer-property-item></buyer-property-item>
+                        </div>
+                        <div class="col-md-6">
+                            <buyer-property-item></buyer-property-item>
+                        </div>
+                    </div>
+                    <div class="row nopadding">
+                        <div class="col-md-6">
+                            <buyer-property-item></buyer-property-item>
+                        </div>
+                        <div class="col-md-6">
+                            <buyer-property-item></buyer-property-item>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary btn-view-all">Load more</button>
+                </div>
+                <div class="properties-by-section template-box-default white-bg">
+                    <p class="alert-title">Properties by</p>
+                    <img src="images/logos.jpg" alt="logo-image">
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-sm-3 col-md-3 side-right-nav">
+            <buyer-featured-promo></buyer-featured-promo>
+            <buyer-dashboard-hint-item></buyer-dashboard-hint-item>
+            <buyer-ad-item></buyer-ad-item>
+        </div>
+    </div>
+  </div>
+  <page-footer></page-footer>
+</template>

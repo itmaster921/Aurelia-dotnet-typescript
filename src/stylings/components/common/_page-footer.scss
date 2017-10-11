@@ -1,0 +1,109 @@
+.footer {
+    padding: 40px 0 38px;
+    background-color: $color-nav-blue;
+    color: $color-white;
+    font-weight: 300;
+    font-size: 14px;
+    font-size: 1.4rem;
+    
+    .container {
+        // display: table;
+        
+        .row {
+            >div {
+                // display: table-cell;
+                // padding: 10px 50px;
+                // 
+                // min-width: 300px;
+                // vertical-align: top;
+
+                &:nth-last-child(1) {
+                    border-right-width: 0;
+                }
+            }
+
+            .footer-info {
+                padding-top: 10px;
+                display: inline-block;
+                text-align: left;
+
+                img {
+                    margin-bottom: 12px;
+                }
+
+                p {
+                    &:nth-last-child(1) {
+                        margin: 0;
+                    }
+                }
+            }
+
+            .footer-menus {
+                border-style: solid;
+                border-color: rgba(255, 255, 255, 0.2);
+                border-width: 0 1px 0 1px;
+
+                .footer-menu {
+                    width: 120px;
+                    display: inline-block;
+                    padding: 10px 30px 10px;
+                    text-align: left;
+                    color: $color-white;
+
+                    &:nth-last-child(-n+3) {
+                        // padding: 0 30px;
+                    }
+
+                    &:hover, &:focus {
+                        color: darken($color-white, 10%);
+                    }
+                }
+            }
+
+            .footer-social-connection {
+                text-align: center;
+                padding-top: 10px;
+
+                .footer-social-network {
+                    width: 35px;
+                    height: 35px;
+                    color: $color-white;
+                    background-color: rgba(255, 255, 255, 0.2);
+                    display: inline-block;
+                    margin: 10px;
+                    font-size: 18px;
+                    font-size: 1.8rem;
+                    padding-top: 7px;
+
+                    &:hover, &:focus {
+                        background-color: rgba(255, 255, 255, 0.5);
+                    }
+                }
+            }
+
+            @media (max-width: $screen-xs-max) {
+                text-align: center;
+
+                .footer-info {
+                    padding-bottom: 20px;
+                }
+
+                .footer-menus {
+
+                    .footer-menu {
+                        padding: 10px 20px 10px;
+                        width: 100px;
+                    }
+                }
+            }
+
+            @media (max-width: 500px) {
+                .col-xs-7, .col-xs-5 {
+                    width: 100%;
+                }
+            }
+        }
+
+        
+    }
+}

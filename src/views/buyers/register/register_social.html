@@ -1,0 +1,40 @@
+<template>
+  <div class="main-content register-social">
+    <div class="container">
+      <div class="row">
+          <div class="logo"></div>
+      </div>
+      <div class="row ">
+          <button class="btn-facebook col-md-3 centered">Sign up with Facebook</button>
+          <button class="btn-google-plus col-md-3 centered">Sign up with Google+</button>
+      </div>
+      <div class="row">
+          <div class="seperator"><span>or</span></div>
+      </div>
+      <div class="row">
+        <!--<form class="form-horizontal" submit.delegate="handleSignUp()">-->
+        <h3>Sign up with your email address</h3>
+        <div class="col-xs-10 col-sm-8 col-md-6 col-lg-5 centered">
+          <div class="container-input">
+            <div class="row">
+              <div class="col-xs-12 col-sm-6">
+                <input type="text" class="input-value" placeholder="First Name" value.bind="inputValue.firstName" />
+              </div>
+              <div class="col-xs-12 col-sm-6">
+                <input type="text" class="input-value" placeholder="Last Name" value.bind="inputValue.lastName" />
+              </div>
+            </div>
+            <input type="text" class="input-value" placeholder="Email" value.bind="inputValue.email" />
+            <input type="text" class="input-value" placeholder="Confirm email" value.bind="inputValue.confirmEmail" />
+            <input type="password" class="input-value" placeholder="Password" value.bind="inputValue.password" />
+            <p class="note-term-of-policy">By clicking on Sign up, you agree to <span>Kohab's terms and conditions</span> and <span>privacy policy</span></p>
+            <button class="btn-signup" click.delegate="handleSignUp()">Sign up</button>
+            <p>Already have an account? <span>Log in</span></p>
+          </div>
+        </div>
+       
+        <!--</form>-->
+      </div>
+    </div>
+  </div>
+</template>

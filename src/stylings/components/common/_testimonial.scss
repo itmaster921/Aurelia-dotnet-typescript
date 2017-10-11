@@ -1,0 +1,66 @@
+.testimonial-block {
+    padding-bottom: 30px;
+    text-align: center;
+    color: $color-white;
+    background-image: url("/images/bg_triangle.png");
+    background-repeat: no-repeat;
+    background-position: left 75% bottom 0;
+    line-height: 1.35;
+
+    .testimonial-block-content {
+        padding: 21px 18px 24px;
+        background-color: $color-link;
+
+        p {
+            font-size: 18px;
+            font-size: 1.8rem;
+        }
+
+        .profile-picture-wrapper {
+            padding: 12px;
+
+            img {
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                box-shadow: 0 3px 2px 2px rgba(0, 0, 0, 0.5);
+            }
+        }
+
+        span {
+            font-size: 12px;
+            font-size: 1.2rem;
+        }
+    }
+    
+}
+
+.testimonial-developer-block {
+    padding-bottom: 40px;
+    background-color: $color-main-bg;
+}
+
+.testimonial-statistics-block {
+    background-color: $color-main-bg;
+    margin-bottom: 40px;
+
+    .testimonial-statistics-item {
+        padding: 20px 17px 5px;
+
+        .statistics-item-caption {
+            font-size: 60px;
+            font-size: 6rem;
+            text-align: center;
+            color: $color-link;
+            line-height: 1;
+            margin-bottom: 0;
+        }
+
+        .statistics-item-desc {
+            font-size: 18px;
+            font-size: 1.8rem;
+            line-height: 1.35;
+            text-align: center;
+        }
+    }
+}

@@ -1,0 +1,43 @@
+<template>
+    <div class="testimonial-block ${usersRole == 'Developer' ? 'testimonial-developer-block' : ''}">
+        <div class="testimonial-block-content">
+            <p>
+                “Kohab lorem ipsum dolor sit amet, interdum velit sit amet sttis interdum.”
+            </p>
+            <p if.bind="usersRole == 'Developer'">
+                Sed eget molestie elit. Cras nec enim in felis eleifend mollis sit amet in lorem.
+            </p>
+            <p if.bind="usersRole == 'Developer'">
+                Etiam eget lorem nec quam faucibus.”
+            </p>
+            <div class="profile-picture-wrapper">
+                <img src="/images/profile_picture_dummy.png">
+            </div>
+            <span>
+                Laura McMilton, Aust Mortages
+            </span>
+        </div>
+    </div>
+    <div if.bind="usersRole == 'Developer'" class="testimonial-statistics-block">
+        <div class="testimonial-statistics-item">
+            <p class="statistics-item-caption">
+                78%
+            </p>
+            <p class="statistics-item-desc">
+                Lorem ipsum dolor sit amet, interdum velit sit amet sttis interdum lorem.
+            </p>
+        </div>
+        <div class="testimonial-statistics-item">
+            <p class="statistics-item-caption">
+                93/100
+            </p>
+            <p class="statistics-item-desc">
+                Sed eget molestie elit. Cras nec enim in felis eleifend mollis sit amet in lorem.
+            </p>
+            <p class="statistics-item-desc">
+                Etiam eget lorem nec quam faucibus.
+            </p>
+        </div>
+    </div>
+
+</template>

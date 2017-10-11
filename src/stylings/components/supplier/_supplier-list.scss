@@ -1,0 +1,49 @@
+.supplier-list {
+    background-color: $color-white;
+    padding: 17px 20px 21px;
+    margin-bottom: 30px;
+
+    .list-nav {
+        padding: 0;
+
+        .btn {
+            font-size: 14px;
+            font-size: 1.4rem;
+            width: 120px;
+            line-height: 22px;
+            padding: 6px 12px 5px;
+
+            i {
+                font-size: 19px;
+                font-size: 1.9rem;
+                vertical-align: top;
+            }
+
+            &[disabled] {
+                background-color: $color-border;
+                border-color: $color-border;
+            }
+        }
+    }
+}
+
+.supplier-added-padding {
+    padding-left: 0;
+    padding-right: 0;
+    background-color: transparent;
+}
+
+.title-section {
+    margin-bottom: 24px;
+
+    h3 {
+        font-size: 20px;
+        font-size: 2rem;
+        margin: 0 0 2px;
+    }
+
+    a {
+        color: $color-nav-blue;
+        margin-top: 6px;
+    }
+}

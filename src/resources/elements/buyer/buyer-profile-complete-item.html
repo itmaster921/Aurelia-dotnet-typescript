@@ -1,0 +1,65 @@
+<template>
+  <require from="./buyer-profile-complete-interest-item"></require>
+  <require from="./buyer-profile-complete-dropdown-item"></require>
+
+  <div class="buyer-profile-complete-item template-box-default white-bg">
+      <p class="alert-title">Complete your profile</p>
+      <div class="label-interest">
+          <p>Areas I'm intersted in:</p>
+          <input type="text" class="input-value" placeholder="Start typing suburb or postcode" />
+          <ul><li><input type="radio" id="f-option" name="selector"/><label for="f-option">Include surrounding suburbs</label><div class="check"></div></li></ul>
+      </div>
+      <div class="properties-interested">
+          <p>Properties I'm intersted in :</p>
+          <div class="row">
+            <buyer-profile-complete-interest-item></buyer-profile-complete-interest-item>
+            <buyer-profile-complete-interest-item></buyer-profile-complete-interest-item>
+            <buyer-profile-complete-interest-item></buyer-profile-complete-interest-item>
+            <buyer-profile-complete-interest-item></buyer-profile-complete-interest-item>
+            <buyer-profile-complete-interest-item></buyer-profile-complete-interest-item>
+            <buyer-profile-complete-interest-item></buyer-profile-complete-interest-item>
+          </div>
+      </div>
+      <div class="property-properties">
+          <div class="row">
+            <buyer-profile-complete-dropdown-item></buyer-profile-complete-dropdown-item>
+            <buyer-profile-complete-dropdown-item></buyer-profile-complete-dropdown-item>
+            <buyer-profile-complete-dropdown-item></buyer-profile-complete-dropdown-item>
+          </div>
+      </div>
+      <div class="interest-select">
+          <p>Interests (select all that apply):</p>
+          <div class="row">
+            <buyer-profile-complete-interest-item></buyer-profile-complete-interest-item>
+            <buyer-profile-complete-interest-item></buyer-profile-complete-interest-item>
+            <buyer-profile-complete-interest-item></buyer-profile-complete-interest-item>
+            <buyer-profile-complete-interest-item></buyer-profile-complete-interest-item>
+            <buyer-profile-complete-interest-item></buyer-profile-complete-interest-item>
+            <buyer-profile-complete-interest-item></buyer-profile-complete-interest-item>
+            <buyer-profile-complete-interest-item></buyer-profile-complete-interest-item>
+            <buyer-profile-complete-interest-item></buyer-profile-complete-interest-item>
+            <buyer-profile-complete-interest-item></buyer-profile-complete-interest-item>
+            <buyer-profile-complete-interest-item></buyer-profile-complete-interest-item>
+            <buyer-profile-complete-interest-item></buyer-profile-complete-interest-item>
+            <buyer-profile-complete-interest-item></buyer-profile-complete-interest-item>
+            <buyer-profile-complete-interest-item></buyer-profile-complete-interest-item>
+            <buyer-profile-complete-interest-item></buyer-profile-complete-interest-item>
+            <buyer-profile-complete-interest-item></buyer-profile-complete-interest-item>
+            <buyer-profile-complete-interest-item></buyer-profile-complete-interest-item>
+            <buyer-profile-complete-interest-item></buyer-profile-complete-interest-item>
+            <buyer-profile-complete-interest-item></buyer-profile-complete-interest-item>
+            <buyer-profile-complete-interest-item></buyer-profile-complete-interest-item>
+            <buyer-profile-complete-interest-item></buyer-profile-complete-interest-item>
+            <buyer-profile-complete-interest-item></buyer-profile-complete-interest-item>
+            <buyer-profile-complete-interest-item></buyer-profile-complete-interest-item>
+            <buyer-profile-complete-interest-item></buyer-profile-complete-interest-item>
+          </div>
+      </div>
+      <div class="upload-images-section">
+          <p>Choose a profile photo:</p>
+          <p class="description-text">Upload your profile image or logo by dragging it into the box below or by manually uploading. We recommend you upload your photo as a square, minimum size 400x400 at 72dpi.</p>
+          <div class="photo-uploading"></div>
+          <button class="btn btn-primary btn-view-all" click.trigger="handleSaveProfile()">Save my profile</button>
+      </div>
+  </div>
+</template>

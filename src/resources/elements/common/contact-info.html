@@ -1,0 +1,33 @@
+<template>
+  <require from="./social-network-group"></require>
+
+  <div class="contact-info-block">
+    <div class="profile-image-wrapper">
+      <img class="profile-image" src="/images/dummy_profile_image.png" />
+      <img if.bind="checked" class="profile-checked" src="/images/icon_green_tick.png" />
+    </div>
+    <div if.bind="infoType == 'Primary Contact'">
+      <p class="info">+61 2 9844 7633<br>www.suppliersite.com.au</p>
+    </div>
+    <div>
+      <div if.bind="showRating" class="supplier-rating">
+        <div class="star-ratings-css star-ratings-large">
+            <div class="star-ratings-css-top" style="width: 80%"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+            <div class="star-ratings-css-bottom"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+        </div>
+        <span>average rating</span>
+      </div>
+      <div if.bind="showSocialNet" class="supplier-social-network-wrapper">
+        <social-network-group></social-network-group>
+      </div>
+    </div>
+    <div if.bind="infoType == 'Edit Listing'">
+      <p class="supplier-name">NAB Australia</p>
+      <p class="info-caption">Experts &amp; Advice<br>Professional listing</p>
+      <a class="info-edit">
+        <i class="fa fa-pencil" aria-hidden="true"></i>Edit Listing
+      </a>
+
+    </div>
+  </div>
+</template>
